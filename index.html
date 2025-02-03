@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./styles/final.css"> -->
+    <link rel="stylesheet" href="./styles/app.css">
+    <title>Portfolio</title>
+</head>
+<body class="text-white bg-zinc-950">
+
+    <!-- svg app -->
+     <svg class="hidden">
+        <symbol id="frame3" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1H32" stroke="#C7C7C7" stroke-width="2"/>
+            <path d="M0 13H32" stroke="#C7C7C7" stroke-width="2"/>
+        </symbol>
+        <symbol id="linkdin" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.39825 7.79682C6.70735 7.79682 7.76858 6.73558 7.76858 5.42649C7.76858 4.11739 6.70735 3.05615 5.39825 3.05615C4.08915 3.05615 3.02792 4.11739 3.02792 5.42649C3.02792 6.73558 4.08915 7.79682 5.39825 7.79682Z" fill="#D3E97A"/>
+            <path d="M10.0068 9.59282V22.7434H14.0898V16.2402C14.0898 14.5242 14.4127 12.8623 16.5403 12.8623C18.6388 12.8623 18.6648 14.8242 18.6648 16.3485V22.7445H22.75V15.5327C22.75 11.9902 21.9873 9.26782 17.8468 9.26782C15.8589 9.26782 14.5264 10.3587 13.9815 11.3912H13.9263V9.59282H10.0068ZM3.35292 9.59282H7.4425V22.7434H3.35292V9.59282Z" fill="#D3E97A"/>
+        </symbol>
+        <symbol id="x-app" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.0402 4.66669H28.3133L18.9799 14.2874L30 27.3334H21.3414L14.5944 19.4252L6.83534 27.3334H2.56225L12.5703 17.0578L2 4.66669H10.8835L17.012 11.92L24.0402 4.66669ZM22.5221 25.0163H24.8835L9.59036 6.83261H7.00402L22.5221 25.0163Z" fill="#D3E97A"/>
+        </symbol>    
+        <symbol id="github" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0282 2.16675C7.06008 2.16675 2.223 7.00383 2.223 12.9719C2.223 17.7451 5.31808 21.7957 9.61242 23.2257C10.153 23.3232 10.348 22.9906 10.348 22.7046C10.348 22.4478 10.3393 21.7675 10.3361 20.8673C7.32983 21.5194 6.695 19.4178 6.695 19.4178C6.20533 18.1698 5.49575 17.8372 5.49575 17.8372C4.51533 17.1666 5.5705 17.1818 5.5705 17.1818C6.656 17.2576 7.22475 18.2954 7.22475 18.2954C8.18892 19.9464 9.75542 19.4698 10.3686 19.1935C10.4672 18.4948 10.7488 18.0181 11.0565 17.7483C8.658 17.4764 6.136 16.5491 6.136 12.4075C6.136 11.2299 6.55742 10.2636 7.24533 9.50958C7.13592 9.2355 6.76217 8.13592 7.35258 6.64958C7.35258 6.64958 8.25933 6.35817 10.3231 7.75567C11.2045 7.51589 12.1137 7.3935 13.0271 7.39167C13.9405 7.39315 14.8498 7.51554 15.7311 7.75567C17.7959 6.35708 18.7016 6.64958 18.7016 6.64958C19.292 8.13592 18.9215 9.2355 18.8088 9.50958C19.5022 10.2636 19.9182 11.2288 19.9182 12.4075C19.9182 16.5599 17.394 17.4721 14.9868 17.7397C15.3714 18.0733 15.7181 18.732 15.7181 19.7395C15.7181 21.1847 15.7051 22.3503 15.7051 22.7046C15.7051 22.9938 15.8979 23.3297 16.4493 23.2235C20.7415 21.7913 23.8333 17.744 23.8333 12.9719C23.8333 7.00383 18.9963 2.16675 13.0282 2.16675Z" fill="#D3E97A"/>
+        </symbol>
+        <symbol id="bootstrap" viewBox="0 0 97 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_759)">
+            <path d="M96.242 83.3333C96.242 92.5 89.0238 100 80.2016 100H16.0403C7.21815 100 0 92.5 0 83.3333V16.6667C0 7.5 7.21815 0 16.0403 0H80.2016C89.0238 0 96.242 7.5 96.242 16.6667V83.3333Z" fill="#563D7C"/>
+            <path d="M26.1518 21.7323H53.4361C58.4683 21.7323 62.5099 22.9251 65.545 25.327C68.58 27.729 70.1054 31.3401 70.1054 36.1931C70.1054 39.1342 69.4135 41.6506 68.0296 43.7421C66.6458 45.8336 64.6643 47.4676 62.0853 48.6114V48.7748C65.545 49.5427 68.1712 51.2421 69.9482 53.8728C71.7252 56.5199 72.6216 59.8205 72.6216 63.8074C72.6216 66.095 72.2284 68.2355 71.4421 70.2127C70.6558 72.2061 69.4292 73.9218 67.7466 75.3597C66.0639 76.7976 63.9252 77.9414 61.299 78.7911C58.6728 79.6408 55.5591 80.0656 51.9421 80.0656H26.1518V21.7323ZM35.9804 46.1604H52.0208C54.3796 46.1604 56.3454 45.4741 57.9179 44.0689C59.4905 42.6636 60.2768 40.6702 60.2768 38.0558C60.2768 35.1146 59.5691 33.0395 58.1538 31.8466C56.7385 30.6538 54.6941 30.0493 52.0208 30.0493H35.9804V46.1604ZM35.9804 71.7323H53.3575C56.3454 71.7323 58.6728 70.9316 60.3083 69.314C61.9595 67.7127 62.7929 65.4251 62.7929 62.4839C62.7929 59.5917 61.9752 57.3859 60.3083 55.8172C58.6413 54.2486 56.3454 53.497 53.3575 53.497H35.9804V71.7323Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_759">
+            <rect width="96.242" height="100" fill="white"/>
+            </clipPath>
+            </defs>
+        </symbol>
+        <symbol id="css" viewBox="0 0 85 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.00976562 0L7.67267 90L42.0806 100L76.4765 90.0062L84.1514 0H0.00976562Z" fill="#2196F3"/>
+            <path d="M67.7674 29.4311L66.7998 40.7374L63.8789 74.6311L42.0802 80.8999L42.0622 80.9061L20.2755 74.6311L18.7549 56.9061H29.4289L30.2222 66.0999L42.0682 69.4249L42.0742 69.4186L53.9382 66.0936L55.5549 50.7749L18.2441 50.8811L17.1863 40.4061L56.4504 39.9249L57.2437 28.7124L16.1345 28.8311L15.4434 18.3999H42.0802H68.717L67.7674 29.4311Z" fill="#FAFAFA"/>
+        </symbol>
+        <symbol id="gitmb" viewBox="0 0 97 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="96.242" height="100" fill="url(#pattern0_1_765)"/>
+            <defs>
+            <pattern id="pattern0_1_765" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_1_765" transform="matrix(0.00271292 0 0 0.00261097 -0.0195239 0)"/>
+            </pattern>
+            <image id="image0_1_765" width="383" height="383" xlink:href="data:image/png;base64,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"/>
+            </defs>
+        </symbol>
+        <symbol id="javascript" viewBox="0 0 97 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H96.242V100H0V0Z" fill="#F7DF1E"/>
+            <path d="M25.3058 83.5671L32.6709 78.9358C34.0917 81.5534 35.3843 83.7682 38.4846 83.7682C41.4565 83.7682 43.3302 82.5602 43.3302 77.8618V45.9095H52.3745V77.9947C52.3745 87.728 46.8835 92.1583 38.8724 92.1583C31.6373 92.1583 27.4374 88.2649 25.3056 83.5663" fill="black"/>
+            <path d="M57.2868 82.5603L64.651 78.13C66.5896 81.4195 69.1091 83.8359 73.5665 83.8359C77.314 83.8359 79.7037 81.889 79.7037 79.204C79.7037 75.9819 77.2489 74.8406 73.1142 72.9617L70.8537 71.9541C64.3283 69.0682 59.9997 65.4435 59.9997 57.7909C59.9997 50.7427 65.1679 45.3724 73.2437 45.3724C78.9935 45.3724 83.1281 47.4535 86.0995 52.8908L79.0576 57.5894C77.5071 54.7032 75.8279 53.5622 73.2439 53.5622C70.5951 53.5622 68.9153 55.3075 68.9153 57.5894C68.9153 60.4087 70.5951 61.5502 74.4709 63.2955L76.7318 64.3024C84.4197 67.726 88.7483 71.2162 88.7483 79.0697C88.7483 87.5281 82.3526 92.1593 73.7605 92.1593C65.3621 92.1593 59.9353 87.9978 57.2869 82.5603" fill="black"/>
+        </symbol>
+        <symbol id="html" viewBox="0 0 85 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.015625 0L7.68491 90L42.1215 100L76.546 90.0062L84.2273 0H0.015625Z" fill="#FF5722"/>
+            <path d="M67.5955 29.4316H42.1215H27.2341L28.1965 40.7379H42.1215H66.6331L63.7399 74.6379L42.1215 80.9066L42.1035 80.9129L20.4972 74.6379L18.9874 56.9066H29.574L30.362 66.1066L42.1095 69.4254L42.1215 69.4191L53.8811 66.1004L55.1082 51.7816H42.1215H18.5543L15.7031 18.4004H42.1215H68.5339L67.5955 29.4316Z" fill="#FAFAFA"/>
+        </symbol>
+        <symbol id="tailwindcss" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33">
+            <g clip-path="url(#prefix__clip0)">
+            <path fill="#38bdf8" fill-rule="evenodd" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" clip-rule="evenodd"/></g>
+            <defs><clipPath id="prefix__clip0">
+            <path fill="#fff" d="M0 0h54v32.4H0z"/></clipPath></defs>
+        </symbol>
+        <symbol id="vuejs" viewBox="0 -17.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+          <g>
+            <path d="M204.8,0 L256,0 L128,220.8 L0,0 L50.56,0 L97.92,0 L128,51.2 L157.44,0 L204.8,0 Z" fill="#41B883">
+        
+        </path>
+            <path d="M0,0 L128,220.8 L256,0 L204.8,0 L128,132.48 L50.56,0 L0,0 Z" fill="#41B883">
+        
+        </path>
+            <path d="M50.56,0 L128,133.12 L204.8,0 L157.44,0 L128,51.2 L97.92,0 L50.56,0 Z" fill="#35495E">
+        
+        </path>
+          </g>
+        </symbol>
+        <symbol id="githubLearning" viewBox="0 0 97 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect width="96.242" height="100" fill="url(#pattern0_1_766)"/>
+          <defs>
+          <pattern id="pattern0_1_766" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_1_766" transform="matrix(0.00271292 0 0 0.00261097 -0.0195239 0)"/>
+          </pattern>
+          <image id="image0_1_766" width="383" height="383" xlink:href="data:image/png;base64,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"/>
+          </defs>
+        </symbol>
+        <symbol id="insta" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.9987 9.836C14.3635 9.836 12.7953 10.4856 11.6391 11.6418C10.4829 12.798 9.83333 14.3662 9.83333 16.0013C9.83333 17.6365 10.4829 19.2047 11.6391 20.3609C12.7953 21.5171 14.3635 22.1667 15.9987 22.1667C17.6338 22.1667 19.202 21.5171 20.3582 20.3609C21.5144 19.2047 22.164 17.6365 22.164 16.0013C22.164 14.3662 21.5144 12.798 20.3582 11.6418C19.202 10.4856 17.6338 9.836 15.9987 9.836ZM15.9987 20.0053C14.9364 20.0053 13.9176 19.5833 13.1665 18.8322C12.4153 18.0811 11.9933 17.0623 11.9933 16C11.9933 14.9377 12.4153 13.9189 13.1665 13.1678C13.9176 12.4167 14.9364 11.9947 15.9987 11.9947C17.0609 11.9947 18.0797 12.4167 18.8309 13.1678C19.582 13.9189 20.004 14.9377 20.004 16C20.004 17.0623 19.582 18.0811 18.8309 18.8322C18.0797 19.5833 17.0609 20.0053 15.9987 20.0053Z" fill="#D3E97A"/>
+            <path d="M22.408 11.0467C23.2018 11.0467 23.8453 10.4031 23.8453 9.60933C23.8453 8.81551 23.2018 8.172 22.408 8.172C21.6142 8.172 20.9707 8.81551 20.9707 9.60933C20.9707 10.4031 21.6142 11.0467 22.408 11.0467Z" fill="#D3E97A"/>
+            <path d="M27.3773 8.14799C27.0687 7.35089 26.597 6.62703 25.9924 6.02273C25.3879 5.41843 24.6639 4.94701 23.8667 4.63865C22.9338 4.28846 21.9482 4.09911 20.952 4.07865C19.668 4.02265 19.2613 4.00665 16.0053 4.00665C12.7493 4.00665 12.332 4.00665 11.0587 4.07865C10.0632 4.09806 9.07834 4.28745 8.14667 4.63865C7.34925 4.94665 6.62502 5.41795 6.02045 6.02229C5.41587 6.62663 4.9443 7.35068 4.636 8.14799C4.28574 9.0808 4.09682 10.0664 4.07733 11.0627C4.02 12.3453 4.00267 12.752 4.00267 16.0093C4.00267 19.2653 4.00267 19.68 4.07733 20.956C4.09733 21.9533 4.28533 22.9373 4.636 23.872C4.94517 24.669 5.41719 25.3928 6.02191 25.997C6.62663 26.6013 7.35075 27.0728 8.148 27.3813C9.07791 27.7456 10.0632 27.9485 11.0613 27.9813C12.3453 28.0373 12.752 28.0547 16.008 28.0547C19.264 28.0547 19.6813 28.0547 20.9547 27.9813C21.9508 27.9611 22.9363 27.7722 23.8693 27.4227C24.6663 27.1136 25.3902 26.6417 25.9946 26.0373C26.5991 25.4328 27.0709 24.709 27.38 23.912C27.7307 22.9787 27.9187 21.9947 27.9387 20.9973C27.996 19.7147 28.0133 19.308 28.0133 16.0507C28.0133 12.7933 28.0133 12.38 27.9387 11.104C27.9231 10.0937 27.7332 9.09365 27.3773 8.14799ZM25.7533 20.8573C25.7447 21.6257 25.6045 22.387 25.3387 23.108C25.1384 23.6265 24.8319 24.0973 24.4388 24.4902C24.0456 24.8831 23.5746 25.1894 23.056 25.3893C22.343 25.6539 21.5898 25.7942 20.8293 25.804C19.5627 25.8627 19.2053 25.8773 15.9573 25.8773C12.7067 25.8773 12.3747 25.8773 11.084 25.804C10.3239 25.7947 9.5711 25.6544 8.85867 25.3893C8.33825 25.1906 7.86534 24.8849 7.47052 24.4919C7.0757 24.099 6.76778 23.6275 6.56667 23.108C6.30459 22.3947 6.16442 21.6424 6.152 20.8827C6.09467 19.616 6.08133 19.2587 6.08133 16.0107C6.08133 12.7613 6.08133 12.4293 6.152 11.1373C6.16062 10.3693 6.30087 9.60855 6.56667 8.88799C6.97333 7.83599 7.80667 7.00799 8.85867 6.60532C9.57145 6.34151 10.324 6.20127 11.084 6.19065C12.352 6.13332 12.708 6.11732 15.9573 6.11732C19.2067 6.11732 19.54 6.11732 20.8293 6.19065C21.5899 6.1998 22.3431 6.34008 23.056 6.60532C23.5746 6.80568 24.0455 7.11226 24.4386 7.50536C24.8317 7.89846 25.1383 8.36941 25.3387 8.88799C25.6007 9.60125 25.7409 10.3535 25.7533 11.1133C25.8107 12.3813 25.8253 12.7373 25.8253 15.9867C25.8253 19.2347 25.8253 19.584 25.768 20.8587H25.7533V20.8573Z" fill="#D3E97A"/>
+            </symbol>
+            
+     </svg>
+
+    <!-- Header app -->
+    <header class="container mx-auto mt-6">
+        <!-- nav menu -->
+         <nav class="flex items-center justify-between">
+            <!-- logo -->
+             <span class="font-BebasNeueRegular text-3xl text-stone-300">m.a$hrafi</span>
+            <!-- menu -->
+             <ul class="hidden sm:flex gap-x-8 font-ManropeMedium text-stone-300">
+                <li><a href="#projects-container">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact-title">Contact</a></li>
+             </ul>
+         </nav>
+        <!-- Dropdown Menu -->
+         <div class="relative ">
+            <button id="dropdownButton" class="absolute right-0 bottom-3.5 sm:hidden">
+                <svg class="w-8 h-3 cursor-pointer">
+                    <use href="#frame3"></use>
+                </svg>
+            </button>        
+            <ul class="absolute right-0 hidden mt-3 w-52 bg-white shadow-md rounded-lg p-2 space-y-2 text-gray-800 font-ManropeMedium" id="dropdownMenu">
+                 <li><a href="#projects-container" class="block py-2 px-4 hover:bg-gray-100">Work</a></li>
+                 <li><a href="#about" class="block py-2 px-4 hover:bg-gray-100">About</a></li>
+                 <li><a href="#contact-title" class="block py-2 px-4 hover:bg-gray-100">Contect</a></li>
+            </ul>
+        </div>
+        <!-- title header -->
+        <div class="flex flex-col sm:flex-row items-center justify-between mt-8">
+            <!-- intro -->
+            <div>
+                <h1 class="flex flex-col font-BebasNeueRegular text-4xl md:text-5xl lg:text-7xl">
+                    <span>hi, i am</span>
+                    <span>mohammad ashrafi</span>
+                </h1>
+                <p class="font-ManropeLight text-sm md:text-base lg:text-wrap xl:text-xl">
+                    A Iran based front-end developer passionate about building accessible and user friendly websites.
+                </p>
+                <!-- btns contact me -->
+                <div class="flex sm:flex-row items-center gap-x-4 mt-10">
+                    <a href="mailto:ashrafi.dev221184@gmail.com" class="flex items-center justify-evenly bg-custom-yellow-500 font-ManropeBold text-base text-black uppercase w-44 h-11 rounded-full mb-4 sm:mb-0">
+                        Contact me
+                        <div class="w-2 h-2 bg-black rounded-full ml-2"></div>
+                    </a>
+                    <a href="https://linkedin.com/in/mohammad-ashrafi-058a79349" target="_blank" class="bg-zinc-800 w-10 h-10 rounded-full flex items-center justify-center mb-4 sm:mb-0">
+                        <svg class="w-6 h-6"><use href="#linkdin"></use></svg>
+                    </a>
+                    <a href="https://github.com/ashrafi-developer" target="_blank" class="bg-zinc-800 w-10 h-10 rounded-full flex items-center justify-center mb-4 sm:mb-0">
+                        <svg class="w-6 h-6"><use href="#github"></use></svg>
+                    </a>
+                </div>
+            </div>
+            <!-- intro image -->
+            <div class="mt-8 sm:mt-0">
+                <img src="./images/picture/image.png" alt="" class="w-80 md:w-96 xl:w-[600px]">
+            </div>
+
+            <div class="inline-block sm:hidden w-[375px] mt-16 border border-b border-zinc-700"></div>
+        </div>
+        
+    </header>
+
+    <!-- Main app -->
+     <main class="container mx-auto mt-20">
+        <!-- projects -->
+        <section>
+            <div class="flex justify-center space-x-6 py-4 border-b border-gray-700">
+                <button id="filter-all" class="text-gray-300 font-medium hover:text-white focus:text-white focus:underline">ALL</button>
+                <button id="filter-projects" class="text-gray-300 font-medium hover:text-white focus:text-white focus:underline">Projects</button>
+                <button id="filter-mini-projects" class="text-gray-300 font-medium hover:text-white focus:text-white focus:underline">Mini-Projects</button>
+            </div>
+            
+            <div id="projects-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+
+                <!-- Project Card 1 -->
+                <div class="project_hover block bg-zinc-800 rounded-lg shadow-lg overflow-hidden relative" data-category="projects">
+                    <img src="./images/picture/headerBgMobile.webp" alt="Project 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                      <h4 class="text-xl font-semibold">Coffee shop.</h4>
+                      <p class="text-sm text-gray-400">Coffee shop website with (Html, Css Tailwind, Js)</p>
+                      <div class="flex space-x-4 mt-4">
+                        <a href="https://ashrafi-developer.github.io/Cafe-/" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">DEMO</a>
+                        <button class="more-btn px-4 py-2 bg-gray-600 text-white rounded-lg text-sm font-medium hover:bg-gray-700">MORE</button>
+                      </div>
+                    </div>
+                    <!-- Hidden Details Section -->
+                    <div class="hidden-details absolute inset-0 bg-black bg-opacity-90 text-white flex items-center justify-center flex-col p-4 opacity-0 transition-opacity duration-300 pointer-events-none">
+                      <h4 class="text-lg font-bold mb-2">Project Details</h4>
+                      <p class="text-sm text-gray-300 mb-4">This is a responsive Coffee Shop website using Tailwind CSS and JavaScript.</p>
+                      <button class="close-btn px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700">CLOSE</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project_hover block bg-zinc-800 rounded-lg shadow-lg overflow-hidden relative" data-category="projects">
+                    <img src="./images/picture/nft1.png" alt="Project 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                      <h4 class="text-xl font-semibold">NFT store.</h4>
+                      <p class="text-sm text-gray-400">NFT store website with (Html, Css Bootstrap, Js)</p>
+                      <div class="flex space-x-4 mt-4">
+                        <a href="https://ashrafi-developer.github.io/NFT-Shop/" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">DEMO</a>
+                        <button class="more-btn px-4 py-2 bg-gray-600 text-white rounded-lg text-sm font-medium hover:bg-gray-700">MORE</button>
+                      </div>
+                    </div>
+                    <!-- Hidden Details Section -->
+                    <div class="hidden-details absolute inset-0 bg-black bg-opacity-90 text-white flex items-center justify-center flex-col p-4 opacity-0 transition-opacity duration-300 pointer-events-none">
+                      <h4 class="text-lg font-bold mb-2">Project Details</h4>
+                      <p class="text-sm text-gray-300 mb-4">This is a responsive NFT store website using Bootstrap CSS and JavaScript.</p>
+                      <button class="close-btn px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700">CLOSE</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project_hover block bg-zinc-800 rounded-lg shadow-lg overflow-hidden relative" data-category="mini-projects">
+                    <img src="./images/picture/food-delivery.avif" alt="Project 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                      <h4 class="text-xl font-semibold">Food Delivery.</h4>
+                      <p class="text-sm text-gray-400">Food Delivery website with (Html, Css)</p>
+                      <div class="flex space-x-4 mt-4">
+                        <a href="https://ashrafi-developer.github.io/Delivery/" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">DEMO</a>
+                        <button class="more-btn px-4 py-2 bg-gray-600 text-white rounded-lg text-sm font-medium hover:bg-gray-700">MORE</button>
+                      </div>
+                    </div>
+                    <!-- Hidden Details Section -->
+                    <div class="hidden-details absolute inset-0 bg-black bg-opacity-90 text-white flex items-center justify-center flex-col p-4 opacity-0 transition-opacity duration-300 pointer-events-none">
+                      <h4 class="text-lg font-bold mb-2">Project Details</h4>
+                      <p class="text-sm text-gray-300 mb-4">This is a responsive Food Delivery website using HTML and CSS.</p>
+                      <button class="close-btn px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700">CLOSE</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project_hover block bg-zinc-800 rounded-lg shadow-lg overflow-hidden relative" data-category="mini-projects">
+                    <img src="./images/picture/DashboardDesign.png" alt="Project 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                      <h4 class="text-xl font-semibold">Dashboard.</h4>
+                      <p class="text-sm text-gray-400">Dashboard website with (Html, Css Bootstrap, Js)</p>
+                      <div class="flex space-x-4 mt-4">
+                        <a href="https://ashrafi-developer.github.io/Dashboard/" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">DEMO</a>
+                        <button class="more-btn px-4 py-2 bg-gray-600 text-white rounded-lg text-sm font-medium hover:bg-gray-700">MORE</button>
+                      </div>
+                    </div>
+                    <!-- Hidden Details Section -->
+                    <div class="hidden-details absolute inset-0 bg-black bg-opacity-90 text-white flex items-center justify-center flex-col p-4 opacity-0 transition-opacity duration-300 pointer-events-none">
+                      <h4 class="text-lg font-bold mb-2">Project Details</h4>
+                      <p class="text-sm text-gray-300 mb-4">This is a responsive Dashboard website using Bootstrap CSS and JavaScript.</p>
+                      <button class="close-btn px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700">CLOSE</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project_hover block bg-zinc-800 rounded-lg shadow-lg overflow-hidden relative" data-category="mini-projects">
+                    <img src="./images/picture/nav-menu.png" alt="Project 1" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                      <h4 class="text-xl font-semibold">Header Website.</h4>
+                      <p class="text-sm text-gray-400">Header Website with (Html, Css, Js)</p>
+                      <div class="flex space-x-4 mt-4">
+                        <a href="https://ashrafi-developer.github.io/menu-navbar/" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700">DEMO</a>
+                        <button class="more-btn px-4 py-2 bg-gray-600 text-white rounded-lg text-sm font-medium hover:bg-gray-700">MORE</button>
+                      </div>
+                    </div>
+                    <!-- Hidden Details Section -->
+                    <div class="hidden-details absolute inset-0 bg-black bg-opacity-90 text-white flex items-center justify-center flex-col p-4 opacity-0 transition-opacity duration-300 pointer-events-none">
+                      <h4 class="text-lg font-bold mb-2">Project Details</h4>
+                      <p class="text-sm text-gray-300 mb-4">This is a responsive Header website using Html, CSS and JavaScript.</p>
+                      <button class="close-btn px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700">CLOSE</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full border-b border-gray-700 mt-10"></div>
+        </section>
+        <!-- About -->
+         <section id="about" class="mt-10 mb-30">
+            <!-- about me -->
+                <div class="relative">
+                    <!-- About Me Title -->
+                    <div class="absolute sm:top-0 sm:left-0 p-8">
+                        <h1 id="about-me" class="hidden sm:block font-BebasNeueRegular text-5xl md:text-6xl lg:text-8xl">ABOUT ME</h1>
+                    </div>
+                    
+                    <!-- About Me Content -->
+                    <div class="flex justify-end items-center h-full sm:pr-8">
+                        <div class="flex flex-col justify-center mx-auto sm:mx-0 w-80 md:w-96 lg:w-[600px]">
+                            <h3 class="text-xl font-semibold mb-4">I am a front-end developer based in Iran. I am currently an IT student</h3>
+                            <p class="text-sm leading-relaxed">
+                                Hi! I'm Mohammad, a passionate and enthusiastic junior web developer. I am currently expanding my skills in web design and development, aiming to create functional and visually appealing projects.
+                                <br><br>
+                                <strong>Here are the skills I’ve gained so far:</strong>
+                                <ul class="list-disc ml-5 mt-2">
+                                    <li>Designing responsive websites using HTML and CSS (Tailwind and Bootstrap)</li>
+                                    <li>Building interactive user experiences with advanced JavaScript</li>
+                                </ul>
+                                <br>
+                                I’m eager to learn new technologies and embrace programming challenges, striving to become a better developer every day.
+                                <br><br>
+                                If you're looking for a motivated individual to collaborate on your projects or just want to connect, I’d love to hear from you! 🌟
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <!-- skills -->
+            <div class="grid grid-cols-2 sm:grid-cols-5 space-y-6">
+                <!-- Skill 1 -->
+                <div class="flex flex-col items-center">
+                  <svg class="w-20 h-full mb-2"><use href="#html"></use></svg>
+                  <p class="font-medium text-sm">HTML5</p>
+                </div>
+          
+                <!-- Skill 2 -->
+                <div class="flex flex-col items-center">
+                  <svg class="w-20 h-full mb-2"><use href="#css"></use></svg>
+                  <p class="font-medium text-sm">CSS3</p>
+                </div>
+          
+                <!-- Skill 3 -->
+                <div class="flex flex-col items-center">
+                    <svg class="w-20 h-full mb-2"><use href="#javascript"></use></svg>
+                  <p class="font-medium text-sm">JS</p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="flex flex-col items-center">
+                    <svg class="w-20 h-full mb-2"><use href="#tailwindcss"></use></svg>
+                    <p class="font-medium text-sm">Tailwind</p>
+                  </div>
+
+                <!-- Skill 5 -->
+                <div class="flex flex-col items-center">
+                    <svg class="w-20 h-full mb-2"><use href="#bootstrap"></use></svg>
+                  <p class="font-medium text-sm">Bootstrap</p>
+                </div>
+
+
+
+            </div>
+         </section>
+     </main>
+    
+     <!-- Footer app -->
+    <footer class="container mx-auto mt-10 mb-10 border-t border-zinc-700 py-10 text-white">
+        <div class="flex flex-col md:flex-row justify-between items-start px-8">
+            <!-- Left Section: Contact Info -->
+            <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                <h1 id="contact-title" class="font-BebasNeueRegular text-5xl md:text-6xl lg:text-7xl">
+                    Let's Connect
+                </h1>
+                <p class="mt-4 text-lg">Say hello at 
+                    <a href="mailto:ashrafi.dev221184@gmail.com" class="font-ManropeRegular text-base border-b border-custom-yellow-500 hover:text-custom-yellow-500 transition duration-300">
+                        ashrafi.dev221184@gmail.com
+                    </a>
+                </p>
+                <p class="mt-2">For more info, here’s my 
+                    <a href="#" class="border-b border-custom-yellow-500 hover:text-custom-yellow-500 transition duration-300">resume</a>
+                </p>
+                <div class="flex items-center gap-x-6 mt-6">
+                    <a href="https://linkedin.com/in/mohammad-ashrafi-058a79349" target="_blank" class="hover:scale-110 transition duration-300"><svg class="w-8 h-8"><use href="#linkdin"></use></svg></a>
+                    <a href="https://github.com/ashrafi-developer" target="_blank" class="hover:scale-110 transition duration-300"><svg class="w-8 h-8"><use href="#github"></use></svg></a>
+                    <!-- <a href="#" class="hover:scale-110 transition duration-300" target="_blank"><svg class="w-8 h-8"><use href="#x-app"></use></svg></a> -->
+                    <a href="https://www.instagram.com/ashrafi.dev" class="hover:scale-110 transition duration-300" target="_blank"><svg class="w-8 h-8"><use href="#insta"></use></svg></a>
+                </div>
+            </div>
+    
+            <!-- Right Section: Contact Form -->
+            <div class="w-full md:w-1/2 bg-zinc-900 p-6 rounded-xl shadow-lg">
+                <form action="https://formspree.io/f/mvgzajdk" method="POST">
+                    <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 mt-1 rounded-lg bg-zinc-800 text-white border border-gray-600 focus:border-custom-yellow-500 focus:outline-none" placeholder="John Doe" required>
+                
+                    <label for="email" class="block text-sm font-medium text-gray-300 mt-4">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 mt-1 rounded-lg bg-zinc-800 text-white border border-gray-600 focus:border-custom-yellow-500 focus:outline-none" placeholder="your@email.com" required>
+                
+                    <label for="subject" class="block text-sm font-medium text-gray-300 mt-4">Subject</label>
+                    <input type="text" id="subject" name="subject" class="w-full p-3 mt-1 rounded-lg bg-zinc-800 text-white border border-gray-600 focus:border-custom-yellow-500 focus:outline-none" placeholder="Subject" required>
+                
+                    <label for="message" class="block text-sm font-medium text-gray-300 mt-4">Message</label>
+                    <textarea id="message" name="message" class="w-full p-3 mt-1 rounded-lg bg-zinc-800 text-white border border-gray-600 focus:border-custom-yellow-500 focus:outline-none h-24" placeholder="Your message..." required></textarea>
+                
+                    <button type="submit" class="mt-6 w-full p-3 bg-custom-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400 transition duration-300">
+                        SUBMIT
+                    </button>
+                </form>
+                 
+            </div>
+        </div>
+        <p class="text-center text-3xl text-gray-400 font-BebasNeueRegular mt-10">&copy; 2025 M.a$hrafi</p>
+    </footer>
+    
+    
+    <script src="./scripts/app.js" type="module"></script>
+</body>
+</html>
